@@ -1,4 +1,5 @@
 Scholar Scraper
+--------------------
 I wrote this simple utility to scrape citation statistics of researcher profiles on Google Scholar. This list contains only researchers who have a Google Scholar profile; names were identified by snowball sampling and various other ad hoc techniques.
 
 
