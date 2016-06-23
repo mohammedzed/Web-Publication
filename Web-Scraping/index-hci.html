@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- from http://www.menucool.com/tooltip/css-tooltip -->
+<link rel="stylesheet" href="tooltip/tooltip.css" type="text/css"/>
+<link rel="stylesheet" href="tablesorter/style.css" type="text/css" media="print, projection, screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="tablesorter/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="stats-hci.json"></script></script>
+</head>
+<body>
+
+<h1>Citations Statistics of Qatar Computing Computing Research Institute </h1>
+
+<div style="width:800px">
+<p><b>Editorial note:</b> This list contains only researchers who have
+a Google Scholar profile; names were identified by snowball sampling
+and various other <i>ad hoc</i> techniques.
+<p>
+</div>
+
+<div id="date" style="width:800px"><small>Data scraped from Google
+Scholar: "name", "citations", "h-index", and "i10-index" are from
+author profile; "year" denotes year of first citation. The columns
+marked "/y" indicates division by years since first
+citation.</small></div>
+
+<p/>
+
+--Citation table Extract
+<table id="stats" border="0" class="tablesorter" width="300">
+<thead>
+<tr>
+    <th>Name</th>
+    <th>Citation</th>
+    <th>h-index</th>
+    <th>i-Index</th>
+</tr>
+</thead>
+</table>
+
+<script>
+function round(n) {
+  return Math.round(n*10)/10;
+}
+
+for (var i=0; i< data.length; i++) {
+  var regex = /user=([^&]+)/;
+  var match = regex.exec(data[i].url);
+  var userId = match[1];
+
+  var row = $('<tr/>');
+  var y = (2014 - data[i].year);
+  row.append($('<td style="text-align: left"/>')
+    .html('<a href="' + data[i].url + '" class="tooltip">' + data[i].name +
+    '<span><img class="callout" src="tooltip/tooltip.gif" />' +
+    '<img style="padding-bottom: 10px" src="images/' + userId + '.png"/><br/>' +
+    '<b>' + data[i].name + '</b><br/>' + data[i].tit+ data[i].affiliation + '<br/>' + '</i></small><br/>' +
+    '</span></a>'));
+  row.append($('<td style="text-align: left" />').html(data[i].stats.citations[0]));
+  row.append($('<td/>').html(data[i].stats.hindex[0]));
+  row.append($('<td/>').html(data[i].stats.i10index[0]));
+  row.append($('<td style="text-align: left" />').html(data[i].citationData[0]));
+  $("#stats").append(row);
+}
+
+// http://tablesorter.com/docs/
+$(document).ready(function() {
+  $("#date").append("<p><small>Last updated: " + date + "</small></p>");
+  $("#stats").tablesorter({sortList: [[4,1], [2,1]]});
+});
+</script>
+
+<p style="margin-top: 300px"/>
+
+</body>
+</html>

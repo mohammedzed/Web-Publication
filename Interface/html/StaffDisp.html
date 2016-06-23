@@ -1,0 +1,55 @@
+
+<div class="container" ng-controller="crudcontroller">
+<br /><br />
+<h1 align="center"  class="head">Welcome to Qatar Computing Research Institute <br />
+  <img src="img/home_banner_network.jpg" width="671" height="191" alt="network"></h1>
+  <div class="bg-primary">
+  <span><strong><p  align="left"> | &nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;|&nbsp;&nbsp; Contact Us &nbsp;&nbsp;|&nbsp;&nbsp; About Us &nbsp;&nbsp;|&nbsp;&nbsp; Our Research &nbsp;&nbsp;|&nbsp;&nbsp; Our People &nbsp;&nbsp;|&nbsp;&nbsp; Resources &nbsp;&nbsp;|&nbsp;&nbsp; Join Us</p></strong></span></div>
+<h1 align="center" class="panel-footer"><ul><i>(QCRI Staff Members Record)</i></ul> </h1>
+<style>
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}</style>
+<br /> <br />
+
+<div class="panel-footer">
+<strong><h4>Search Staff by typing any field here: </h4></strong>&nbsp;<input class="panel-footer" type="text" ng-model="searchBox"><br />
+</div><br /><br />
+
+<table class="table" >
+<br />
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>P Name</th>
+  <th>QF Email</th>
+  <th>Other Email</th>
+  <th>Nationality</th>
+  <th>Start Date</th>
+  <th>End Date</th>
+  <th>C Count</th>
+  <th>H Index</th>
+  <th>Research Title</th>
+  <th>Api-Handle</th>
+  <th>Personal-Web</th>
+  <th>Academic</th>
+  <th>Exp</th></tr>
+  <tr ng-repeat="x in names | filter: searchBox">
+    <span><td>{{ x.qfid }}</td></span>
+    <span><td>{{ x.name }}</td></span>
+    <span><td>{{ x.publishing_names}}</td></span>
+    <span><td>{{ x.qf_email }}</td></span>
+    <span><td>{{ x.other_emails }}</td></span>
+    <span><td>{{ x.nationality }}</td></span>
+    <span><td>{{ x.start_date }}</td></span>
+    <span><td>{{ x.end_date }}</td></span>
+    <span><td>{{ x.citation_count }}</td></span>
+    <span><td>{{ x.h_index }}</td></span>
+    <span><td>{{ x.research_title }}</td></span>
+    <span><td>{{ x.api_handle }}</td></span>
+    <span><td>{{ x.personal_webpage }}</td></span>
+    <span><td>{{ x.is_academic }}</td></span>
+    <span><td>{{ x.experience }}</td></span>
+  </tr>
+</table><br /></div>

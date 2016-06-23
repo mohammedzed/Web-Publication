@@ -1,0 +1,163 @@
+  {
+    "name": "Ashraf Aboulnaga",
+    "photo": "http://scholar.google.com/citations?view_op=view_photo&user=47sihrsAAAAJ&citpid=3",
+    "keywords": [
+      "Databases",
+      "Cloud computing"
+    ],
+    "affiliation": "Qatar Computing Research Institute",
+    "url": "https://scholar.google.com/citations?user=47sihrsAAAAJ&hl=en&oi=sra",
+    "PublicationArray": [
+      {
+        "Title": "Self-tuning histograms: Building histograms without looking at data",
+        "Author": "A Aboulnaga, S Chaudhuri",
+        "Venue": "ACM SIGMOD Record 28 (2), 181-192",
+        "CitedBy": "304",
+        "Year": "1999"
+      },
+      {
+        "Title": "Estimating the selectivity of XML path expressions for internet scale applications",
+        "Author": "A Aboulnaga, AR Alameldeen, JF Naughton",
+        "Venue": "VLDB 1, 591-600",
+        "CitedBy": "251",
+        "Year": "2001"
+      },
+      {
+        "Title": "The Niagara internet query system",
+        "Author": "JF Naughton, DJ DeWitt, D Maier, A Aboulnaga, J Chen, L Galanis, ...",
+        "Venue": "IEEE Data Eng. Bull. 24 (2), 27-33",
+        "CitedBy": "245",
+        "Year": "2001"
+      },
+      {
+        "Title": "CORDS: automatic discovery of correlations and soft functional dependencies",
+        "Author": "IF Ilyas, V Markl, P Haas, P Brown, A Aboulnaga",
+        "Venue": "Proceedings of the 2004 ACM SIGMOD international conference on Management of ...",
+        "CitedBy": "212",
+        "Year": "2004"
+      },
+      {
+        "Title": "Automatic virtual machine configuration for database workloads",
+        "Author": "AA Soror, UF Minhas, A Aboulnaga, K Salem, P Kokosielis, S Kamath",
+        "Venue": "ACM Transactions on Database Systems (TODS) 35 (1), 7",
+        "CitedBy": "179",
+        "Year": "2010"
+      },
+      {
+        "Title": "XSEED: accurate and fast cardinality estimation for XPath queries",
+        "Author": "N Zhang, MT Ozsu, A Aboulnaga, IF Ilyas",
+        "Venue": "22nd International Conference on Data Engineering (ICDE'06), 61-61",
+        "CitedBy": "103",
+        "Year": "2006"
+      },
+      {
+        "Title": "Accurate estimation of the cost of spatial selections",
+        "Author": "A Aboulnaga, JF Naughton",
+        "Venue": "Data Engineering, 2000. Proceedings. 16th International Conference on, 123-134",
+        "CitedBy": "83",
+        "Year": "2000"
+      },
+      {
+        "Title": "ReStore: reusing results of MapReduce jobs",
+        "Author": "I Elghandour, A Aboulnaga",
+        "Venue": "Proceedings of the VLDB Endowment 5 (6), 586-597",
+        "CitedBy": "79",
+        "Year": "2012"
+      },
+      {
+        "Title": "Deploying Database Appliances in the Cloud.",
+        "Author": "A Aboulnaga, K Salem, AA Soror, UF Minhas, P Kokosielis, S Kamath",
+        "Venue": "IEEE Data Eng. Bull. 32 (1), 13-20",
+        "CitedBy": "76",
+        "Year": "2009"
+      },
+      {
+        "Title": "Automated statistics collection in DB2 UDB",
+        "Author": "A Aboulnaga, P Haas, M Kandil, S Lightstone, G Lohman, V Markl, ...",
+        "Venue": "Proceedings of the Thirtieth international conference on Very large data ...",
+        "CitedBy": "63",
+        "Year": "2004"
+      },
+      {
+        "Title": "Generating Synthetic Complex-Structured XML Data.",
+        "Author": "A Aboulnaga, JF Naughton, C Zhang",
+        "Venue": "WebDB 1, 79-84",
+        "CitedBy": "62",
+        "Year": "2001"
+      },
+      {
+        "Title": "Query optimization by sub-plan memoization",
+        "Author": "S Chaudhuri, AI Aboulnaga",
+        "Venue": "US Patent 6,850,925",
+        "CitedBy": "61",
+        "Year": "2005"
+      },
+      {
+        "Title": "Self-tuning histogram and database modeling",
+        "Author": "A Aboulnaga, S Chaudhuri",
+        "Venue": "US Patent 6,460,045",
+        "CitedBy": "60",
+        "Year": "2002"
+      },
+      {
+        "Title": "Remusdb: Transparent high availability for database systems",
+        "Author": "UF Minhas, S Rajagopalan, B Cully, A Aboulnaga, K Salem, A Warfield",
+        "Venue": "The VLDB Journal 22 (1), 29-45",
+        "CitedBy": "59",
+        "Year": "2013"
+      },
+      {
+        "Title": "Second-Tier Cache Management Using Write Hints.",
+        "Author": "X Li, A Aboulnaga, K Salem, A Sachedina, S Gao",
+        "Venue": "FAST 5, 9-9",
+        "CitedBy": "59",
+        "Year": "2005"
+      },
+      {
+        "Title": "Fix: Feature-based indexing technique for xml documents",
+        "Author": "N Zhang, MT Özsu, IF Ilyas, A Aboulnaga",
+        "Venue": "Proceedings of the 32nd international conference on Very large data bases ...",
+        "CitedBy": "53",
+        "Year": "2006"
+      },
+      {
+        "Title": "Modeling and exploiting query interactions in database systems",
+        "Author": "M Ahmad, A Aboulnaga, S Babu, K Munagala",
+        "Venue": "Proceedings of the 17th ACM conference on Information and knowledge ...",
+        "CitedBy": "52",
+        "Year": "2008"
+      },
+      {
+        "Title": "Case study of scientific data processing on a cloud using hadoop",
+        "Author": "C Zhang, H De Sterck, A Aboulnaga, H Djambazian, R Sladek",
+        "Venue": "High performance computing systems and applications, 400-415",
+        "CitedBy": "44",
+        "Year": "2010"
+      },
+      {
+        "Title": "Database systems on virtual machines: How much do you lose?",
+        "Author": "UF Minhas, J Yadav, A Aboulnaga, K Salem",
+        "Venue": "Data Engineering Workshop, 2008. ICDEW 2008. IEEE 24th International ...",
+        "CitedBy": "43",
+        "Year": "2008"
+      },
+      {
+        "Title": "Q-Cop: Avoiding bad query mixes to minimize client timeouts under heavy loads",
+        "Author": "S Tozer, T Brecht, A Aboulnaga",
+        "Venue": "2010 IEEE 26th International Conference on Data Engineering (ICDE 2010), 397-408",
+        "CitedBy": "39",
+        "Year": "2010"
+      }
+    ],
+    "stats": [
+      {
+        "citations": "2708",
+        "citationsSince2011": "1394",
+        "hindex": "27",
+        "hindexSince2011": "23",
+        "i10index": "42",
+        "i10indexSince2011": "38"
+      }
+    ],
+    "year": "2000"
+  }

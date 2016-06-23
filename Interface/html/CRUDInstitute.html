@@ -1,0 +1,52 @@
+
+<div class="container" ng-controller="crudcontrollerInstitute">
+<br /><br />
+<h1 align="center"  class="head">Welcome to Qatar Computing Research Institute <br />
+  <img src="img/home_banner_network.jpg" width="671" height="191" alt="network"></h1>
+  <div class="bg-primary">
+  <span><strong><p  align="left"> | &nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;|&nbsp;&nbsp; Contact Us &nbsp;&nbsp;|&nbsp;&nbsp; About Us &nbsp;&nbsp;|&nbsp;&nbsp; Our Research &nbsp;&nbsp;|&nbsp;&nbsp; Our People &nbsp;&nbsp;|&nbsp;&nbsp; Resources &nbsp;&nbsp;|&nbsp;&nbsp; Join Us</p></strong></span></div>
+<h1 align="center" class="panel-footer"><ul><i>CRUD Operation   &nbsp;&nbsp;&nbsp;   (Institute)</i></ul> </h1>
+<style>
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}</style>
+<table>
+<table width="700">
+<tr>
+<th>Enter Inst ID: </th>   <td><input type="text" ng-model="inst_id"/></td>
+</tr>
+<tr>
+<th>Enter Name: </th>  <td><input type="text" ng-model="name"/></td>
+</tr>
+<tr>
+<th>Enter  Acronym:</th>   <td><input type="text" ng-model="acronym"/></td>
+</tr>
+<tr>
+<th>Enter Location:</th> <td><input type="text" ng-model="location"/></td>
+</tr></table><br/><br/><br/>
+
+
+<input class="btn btn-danger" type="submit" name="btnInsert" value="Add" ng-click="insertdata()"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<input  class="btn btn-warning" type="submit" name="btnUpdate" value="Update" ng-click="updatedata()"  />&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="btn btn-danger" type="submit" name="btnDelete" value="Delete" ng-click="deletedata()" />&nbsp;&nbsp;&nbsp;&nbsp;
+
+</form><br /> <br />
+<div class="panel-footer">
+<strong><h4>Search Institute by id, name, acronym or location no here: </h4></strong>&nbsp;<input class="panel-footer" type="text" ng-model="searchBox"><br />
+</div><br /><br />
+<table class="table">
+  <tr>
+  <th>Institute ID</th>
+  <th>Name</th>
+    <th>Acronym</th>
+    <th> Location</th></tr>
+
+  <tr ng-repeat="x in names | filter: searchBox">
+    <span><td>{{ x.inst_id }}</td></span>
+    <span><td>{{ x.name }}</td></span>
+    <span><td>{{ x.acronym }}</td></span>
+    <span><td>{{ x.location }}</td></span>
+  </tr>
+</table><br />
+</div>

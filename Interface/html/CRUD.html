@@ -1,0 +1,112 @@
+
+<div class="container" ng-controller="crudcontroller">
+<br /><br />
+<h1 align="center"  class="head">Welcome to Qatar Computing Research Institute <br />
+  <img src="img/home_banner_network.jpg" width="671" height="191" alt="network"></h1>
+  <div class="bg-primary">
+  <span><strong><p  align="left"> | &nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;|&nbsp;&nbsp; Contact Us &nbsp;&nbsp;|&nbsp;&nbsp; About Us &nbsp;&nbsp;|&nbsp;&nbsp; Our Research &nbsp;&nbsp;|&nbsp;&nbsp; Our People &nbsp;&nbsp;|&nbsp;&nbsp; Resources &nbsp;&nbsp;|&nbsp;&nbsp; Join Us</p></strong></span></div>
+<h1 align="center" class="panel-footer"><ul><i>CRUD Operation   &nbsp;&nbsp;&nbsp;   (QCRI Staff Members)</i></ul> </h1>
+<style>
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}</style>
+
+<br /> <br />
+
+
+<table>
+<table width="700">
+<tr>
+<th width="500">Enter QF ID:</th>
+<td width="600"> <input type="text" ng-model="qfid"/></td>
+</tr>
+<tr>
+<th>Enter Name: </th>
+<td>  <input type="text" ng-model="name"/></td></tr>
+<tr>
+<th>Enter Publisher Name:</th>
+<td> <input type="text" ng-model="publishing_names"/></td></tr>
+<tr>
+<th>Enter QF Email:  </th>
+<td><input type="text" ng-model="qf_email"/></td></tr>
+<tr>
+<th>Enter Other Email: </th>
+<td >  <input type="text" ng-model="other_emails"/></td></tr>
+<tr>
+<th>Enter Nationality:</th>
+<td><input type="text" ng-model="nationality"/></td></tr>
+<tr>
+<th>Enter Start Date:</th>
+<td><input type="text" ng-model="start_date"/></td></tr>
+<tr>
+<th>Enter End Date: </th>
+<td><input type="text" ng-model="end_date"/></td></tr>
+<tr>
+<th>Enter Citation Count:</th>
+<td><input type="text" ng-model="citation_count"/></td></tr>
+<tr>
+<th>Enter H Index:</th>
+<td><input type="text" ng-model="h_index"/></td></tr>
+<tr>
+<th>Enter Research Title:</th>
+<td><input type="text" ng-model="research_title"/></td></tr>
+<tr>
+<th>Enter Api Handel: </th>
+<td>  <input type="text" ng-model="api_handle"/></td></tr>
+<tr>
+<th>Enter Personal Webpage:</th>
+<td>  <input type="text" ng-model="personal_webpage"/></td></tr>
+<tr>
+<th>Enter Is Academic: </th>
+<td><input type="text" ng-model="is_academic"/></td></tr>
+<tr>
+<th>Enter Experience:</th>
+<td><input type="text" ng-model="experience"/></td></tr></table><br/><br/><br/>
+
+
+
+<input class="btn btn-danger" type="submit" name="btnInsert" value="Create New" ng-click="insertdata()"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="btn btn-warning" type="submit" name="btnUpdate" value="Update" ng-click="updatedata()"  />&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="btn btn-danger" type="submit" name="btnDelete" value="Delete" ng-click="deletedata()" />&nbsp;&nbsp;&nbsp;&nbsp;
+
+<br /> <br />
+<div class="panel-footer">
+<strong><h4>Search Staff by typing any field here: </h4></strong>&nbsp;<input class="panel-footer" type="text" ng-model="searchBox"><br />
+</div><br /><br />
+<table class="table" >
+<br />
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>P Name</th>
+  <th>QF Email</th>
+  <th>Other Email</th>
+  <th>Nationality</th>
+  <th>Start Date</th>
+  <th>End Date</th>
+  <th>C Count</th>
+  <th>H Index</th>
+  <th>Research Title</th>
+  <th>Api-Handle</th>
+  <th>Personal-Web</th>
+  <th>Academic</th>
+  <th>Exp</th></tr>
+  <tr ng-repeat="x in names | filter: searchBox">
+    <span><td>{{ x.qfid }}</td></span>
+    <span><td>{{ x.name }}</td></span>
+    <span><td>{{ x.publishing_names}}</td></span>
+    <span><td>{{ x.qf_email }}</td></span>
+    <span><td>{{ x.other_emails }}</td></span>
+    <span><td>{{ x.nationality }}</td></span>
+    <span><td>{{ x.start_date }}</td></span>
+    <span><td>{{ x.end_date }}</td></span>
+    <span><td>{{ x.citation_count }}</td></span>
+    <span><td>{{ x.h_index }}</td></span>
+    <span><td>{{ x.research_title }}</td></span>
+    <span><td>{{ x.api_handle }}</td></span>
+    <span><td>{{ x.personal_webpage }}</td></span>
+    <span><td>{{ x.is_academic }}</td></span>
+    <span><td>{{ x.experience }}</td></span>
+  </tr>
+</table><br /></div>

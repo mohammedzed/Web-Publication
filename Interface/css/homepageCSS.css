@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+#containeer{
+	width:980px;
+	float:inherit;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin:auto;
+}
+#content{
+	width:980px;
+	padding:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#Font{
+	padding:20px;
+	background-color:#069;
+}
+.home{
+	color:#FFF;
+}
+.headd{
+	color:#069;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.id{
+	text-align:right;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.naveg{
+	text-align:left;
+}
+.pera{
+	font:Verdana, Arial, Helvetica, sans-serif;
+}
+.h2{
+	color:#069;
+}
+.perahead{
+	color: #F00;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+}
+.intend{
+	text-align:!important;
+}
+#Font{
+	background-color:#069;
+	color:#FFF;
+}
+#image{
+	float:left;
+}
+#sideBar{
+	color:#FFF;
+	float:right;
+	width:160px;
+	height:320px;
+	background-color:#069;
+}
+#footer{
+	background-color:#069;
+	color:#FFF;
+	text-align:center;
+	padding:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.home {
+	padding-left:10px;
+	color:#F7F7F7;
+}
+p1::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}

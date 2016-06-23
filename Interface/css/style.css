@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+.wrapper{
+min-height: 960px;
+}
+
+form#empForm, form#editForm {
+padding: 0 35px 35px;
+}
+label.gender {
+padding-top: 0 !important;
+}
+.container{
+	width:100px;
+}
+.search-box {
+padding-bottom: 0;
+}
+@media screen and (max-width: 368px){
+.wrapper{
+min-width: 340px;
+}
+.btn btn-warning{
+	padding: 0 35px 15px;
+}
+.panel-footer{
+	padding:10px 15px;
+	background-color:#f5f5f5;
+	border-top:1px solid #ddd;
+	border-bottom-right-radius:3px; border-bottom-left-radius:3px
+}
+.btn-success{
+	width:100px;
+}
+.atabs{
+	
+	color:#FFF;
+}
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+#container{
+	width:1000;
+	
+	border:#666;
+}
+#bg-primary{
+	background-color:#069;
+	border:thin;
+}
+.active{
+	max-width:20px;
+}
+#sub-container{
+	border:thick;
+}
+.table{
+  table tr:nth-child(odd) {
+  background-color: #CCC;
+  
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}

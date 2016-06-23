@@ -1,0 +1,38 @@
+<div class="container" ng-controller="Publishers.controller">
+<br /> <br />
+<h1 align="center"  class="head">Welcome to Qatar Computing Research Institute <br />
+  <img src="img/home_banner_network.jpg" width="671" height="191" alt="network"></h1>
+  <div class="bg-primary">
+  <span><strong><p  align="left"> | &nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;|&nbsp;&nbsp; Contact Us &nbsp;&nbsp;|&nbsp;&nbsp; About Us &nbsp;&nbsp;|&nbsp;&nbsp; Our Research &nbsp;&nbsp;|&nbsp;&nbsp; Our People &nbsp;&nbsp;|&nbsp;&nbsp; Resources &nbsp;&nbsp;|&nbsp;&nbsp; Join Us</p></strong></span></div>
+<h1 align="center" class="panel-footer"><ul><i>(QCRI Staff Publisher Record)</i></ul> </h1>
+<style>
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}</style>
+<br /> <br />
+
+
+<div class="panel-footer">
+<strong><h4>Search Publisher by any Field: </h4></strong>&nbsp;<input class="panel-footer" type="text" ng-model="searchBox"><br />
+</div><br /><br />
+<table class="TABLE">
+    <th>Publishers</th>
+    <th>Name</th>
+    <th>Acronym</th>
+    <th>Field</th>
+    <th>Category</th>
+    <th>Type</th>
+
+  <tr ng-repeat="x in names | filter: searchBox">
+    <span><td>{{ x.publisher_id }}</td></span>
+    <span><td>{{ x.name }}</td></span>
+    <span><td>{{ x.acronym }}</td></span>
+    <span><td>{{ x.field }}</td></span>
+    <span><td>{{ x.category }}</td></span>
+    <span><td>{{ x.type }}</td></span>
+  </tr>
+</table><br />
+</div>
+</div>
+</body>
